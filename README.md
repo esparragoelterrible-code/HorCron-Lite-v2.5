@@ -11,4 +11,5 @@ Aplicación de escritorio ligera y modular desarrollada en Python utilizando Cus
 - Sistema modular de gestión de tareas y horarios.
 - Sistema de exportación en formato PDF y ICS.
 
-<img width="1919" height="1076" alt="CalCron" src="https://github.com/user-attachments/assets/0a9102d1-0535-40bd-83e1-5f7c55bfd304" />
+<img width="1919" height="1035" alt="Horcron" src="https://github.com/user-attachments/assets/5bb9471d-b6a3-4fac-8e02-fc63938d4c15" />
+
