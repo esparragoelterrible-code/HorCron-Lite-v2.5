@@ -1,6 +1,6 @@
 # HorCron Lite v2.5
 
-Aplicación de escritorio ligera y modular desarrollada en Python utilizando CustomTkinter y persistencia en JSON para la gestión y organización de cronogramas.
+Aplicación de escritorio ligera y modular desarrollada en Python utilizando CustomTkinter y persistencia en JSON para la gestión y organización de horarios con gestión tipo cronograma.
 
 ## Características
 - Interfaz gráfica moderna y limpia.
