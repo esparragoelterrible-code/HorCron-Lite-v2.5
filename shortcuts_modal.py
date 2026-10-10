@@ -36,7 +36,7 @@ class VentanaAtajosTeclado(tk.CTkToplevel):
             ]),
             ("Pestañas y Cronogramas", [
                 ("F1 / Ctrl + T", "Crear nuevo cronograma"),
-                ("F2", "Desplegar calendarios guardados"),
+                ("F2", "Desplegar Horarios guardados"),
                 ("↑ / ↓ (en F2)", "Navegar guardados"),
                 ("A / E (en F2)", "Abrir / Borrar guardado"),
                 ("Ctrl + , / Ctrl + .", "Pestaña Anterior / Siguiente"),

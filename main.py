@@ -17,8 +17,8 @@ from config import (
 )
 from exporter import exportar_a_ics, exportar_a_pdf
 from features import (
-    EditarCalendarioModal,
-    GestorCalendariosGuardados,
+    EditarHorarioModal,
+    GestorHorariosGuardados,
     GestorInspectorNotas,
     GestorPestanasPuras,
 )
@@ -55,7 +55,7 @@ class CronogramaApp(tk.CTk):
         self.v_crear_ref = None
 
         # 2. Configuración de la Ventana Principal
-        self.title("CalCron Lite v2.5 🗓")
+        self.title("HorCron Lite v2.5 🗓")
         self.geometry("1050x650")
         self.minsize(850, 500)
         self.configure(fg_color=("#F3F4F6", "#181825"))
@@ -147,7 +147,7 @@ class CronogramaApp(tk.CTk):
         )
         self.lbl_estado.pack(side="right", padx=10)
 
-        self.gestor_guardados = GestorCalendariosGuardados(
+        self.gestor_guardados = GestorHorariosGuardados(
             self,
             obtener_lista_cb=lambda: self.lista_cronogramas,
             obtener_activo_cb=lambda: self.cronograma_actual,
@@ -440,7 +440,7 @@ class CronogramaApp(tk.CTk):
             self.gestor_guardados.actualizar_lista()
 
         color_actual = self.config.get("colores_pestanas", {}).get(nombre_viejo, "#89B4FA")
-        EditarCalendarioModal(
+        EditarHorarioModal(
             parent=self,
             nombre_actual=nombre_viejo,
             color_actual=color_actual,

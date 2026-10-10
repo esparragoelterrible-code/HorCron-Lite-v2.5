@@ -185,12 +185,12 @@ class GestorInspectorNotas:
         return self.celda_activa_key, self.txt_notas.get("1.0", ctk.END).strip()
 
 
-class EditarCalendarioModal(ctk.CTkToplevel):
+class EditarHorarioModal(ctk.CTkToplevel):
     """Ventana modal para renombrar una pestaña y cambiar su color identificador."""
 
     def __init__(self, parent, nombre_actual: str, color_actual: str, callback_guardar: Callable[[str, str], None]):
         super().__init__(parent)
-        self.title("Editar Calendario")
+        self.title("Editar Horario")
         self.geometry("320x220")
         self.resizable(False, False)
 
@@ -201,7 +201,7 @@ class EditarCalendarioModal(ctk.CTkToplevel):
         self.color_seleccionado = color_actual or "#89B4FA"
 
         self.label_nombre = ctk.CTkLabel(
-            self, text="Nombre del Calendario:", font=("Segoe UI", 12, "bold")
+            self, text="Nombre del Horario:", font=("Segoe UI", 12, "bold")
         )
         self.label_nombre.pack(pady=(15, 5))
 
@@ -384,8 +384,8 @@ class GestorPestanasPuras:
                 btn_del.pack(side="left", padx=(0, 4))
 
 
-class GestorCalendariosGuardados:
-    """Lista desplegable en acordeón para mostrar calendarios guardados que están cerrados."""
+class GestorHorariosGuardados:
+    """Lista desplegable en acordeón para mostrar horarios guardados que están cerrados."""
 
     def __init__(
         self,
@@ -411,7 +411,7 @@ class GestorCalendariosGuardados:
 
         self.btn_toggle = ctk.CTkButton(
             self.frame_main,
-            text="Calendarios guardados >",
+            text="Horarios guardados >",
             anchor="w",
             fg_color="transparent",
             hover_color=("#E5E7EB", "#2A2B3C"),
@@ -428,13 +428,13 @@ class GestorCalendariosGuardados:
     def toggle_desplegable(self):
         self.expandido = not self.expandido
         if self.expandido:
-            self.btn_toggle.configure(text="Calendarios guardados v")
+            self.btn_toggle.configure(text="Horarios guardados v")
             self.frame_contenido.pack(fill="x", expand=True, pady=(5, 0), padx=5)
             self.idx_seleccionado = 0
             self.actualizar_lista()
             self._activar_bindings_teclado()
         else:
-            self.btn_toggle.configure(text="Calendarios guardados >")
+            self.btn_toggle.configure(text="Horarios guardados >")
             self.frame_contenido.pack_forget()
             self._desactivar_bindings_teclado()
             self.widgets_items.clear()
@@ -454,7 +454,7 @@ class GestorCalendariosGuardados:
         if not self.items_guardados:
             lbl_vacio = ctk.CTkLabel(
                 self.frame_contenido,
-                text="No hay otros calendarios guardados.",
+                text="No hay otros Horarios guardados.",
                 text_color=("#6B7280", "#A6ADC8"),
                 font=("Segoe UI", 11, "italic"),
             )

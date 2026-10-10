@@ -62,7 +62,7 @@ class NavegadorTeclado:
 
         # Creación (F1 / Ctrl+T), Acordeón (F2) y Rotación de pestañas (Ctrl+, / Ctrl+.)
         self.app.bind("<F1>", lambda e: self._crear_nueva_pestana())
-        self.app.bind("<F2>", lambda e: self._toggle_calendarios_guardados())
+        self.app.bind("<F2>", lambda e: self._toggle_horarios_guardados())
         self.app.bind("<Control-t>", lambda e: self._crear_nueva_pestana())
         self.app.bind("<Control-T>", lambda e: self._crear_nueva_pestana())
         self.app.bind("<Control-comma>", lambda e: self._cambiar_pestana(-1))
@@ -99,7 +99,7 @@ class NavegadorTeclado:
     # LÓGICA DE PESTAÑAS Y ACORDEÓN
     # ==========================================
 
-    def _toggle_calendarios_guardados(self):
+    def _toggle_horarios_guardados(self):
         if hasattr(self.app, "gestor_guardados") and self.app.gestor_guardados:
             self.app.gestor_guardados.toggle_desplegable()
         return "break"

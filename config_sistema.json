@@ -2,18 +2,18 @@
     "tema": "Dark",
     "formato_hora": "12h",
     "notificaciones_activas": true,
-    "cronograma_activo": "Calendario principal",
+    "cronograma_activo": "Horario principal",
     "cronogramas_lista": [
-        "Calendario principal",
+        "Horario principal",
         "para exámenes",
         "especial"
     ],
     "pestanas_abiertas": [
-        "Calendario principal"
+        "Horario principal"
     ],
     "colores_pestanas": {
-        "Calendario principal": "#F38BA8",
-        "para exámenes": "#74C7EC"
+        "para exámenes": "#74C7EC",
+        "Horario principal": "#F38BA8"
     },
     "mostrar_indicador_vacio": true,
     "categorias": {

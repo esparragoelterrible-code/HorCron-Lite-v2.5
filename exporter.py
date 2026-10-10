@@ -115,7 +115,7 @@ def exportar_a_pdf(
         ]
 
         json_completo = cargar_json_completo(ruta_json)
-        notas_calendario = (
+        notas_Horario = (
             json_completo.get("_notas", {}).get(nombre_cronograma, {})
         )
 
@@ -127,7 +127,7 @@ def exportar_a_pdf(
                     datos_cronograma.get(clave, "")
                 )
 
-                if clave in notas_calendario and str(notas_calendario[clave]).strip():
+                if clave in notas_Horario and str(notas_Horario[clave]).strip():
                     texto_actividad += "*"
 
                 texto_html = texto_actividad.replace("\n", "<br/>")
@@ -155,10 +155,10 @@ def exportar_a_pdf(
         elements.append(tabla)
 
         # Página 2: Anotaciones y detalles (opcional si existen notas)
-        if notas_calendario:
+        if notas_Horario:
             notas_activas = {
                 k: str(v).strip()
-                for k, v in notas_calendario.items()
+                for k, v in notas_Horario.items()
                 if v and str(v).strip()
             }
 
@@ -224,10 +224,10 @@ def exportar_a_pdf(
 def exportar_a_ics(
     datos_cronograma: Dict[str, Any], nombre_cronograma: str = "Principal"
 ) -> bool:
-    """Genera un archivo .ics con identificadores RFC 5545 válidos para importar en calendarios."""
+    """Genera un archivo .ics con identificadores RFC 5545 válidos para importar en Horarios."""
     archivo_destino = filedialog.asksaveasfilename(
         defaultextension=".ics",
-        filetypes=[("Calendario iCalendar", "*.ics")],
+        filetypes=[("Horario iCalendar", "*.ics")],
         title=f"Exportar {nombre_cronograma} a iCalendar (.ics)",
         initialfile=f"Cronograma_{nombre_cronograma}.ics",
     )
