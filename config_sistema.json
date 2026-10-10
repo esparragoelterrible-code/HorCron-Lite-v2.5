@@ -1,0 +1,47 @@
+{
+    "tema": "Dark",
+    "formato_hora": "12h",
+    "notificaciones_activas": true,
+    "cronograma_activo": "Calendario principal",
+    "cronogramas_lista": [
+        "Calendario principal",
+        "para exámenes",
+        "especial"
+    ],
+    "pestanas_abiertas": [
+        "Calendario principal"
+    ],
+    "colores_pestanas": {
+        "Calendario principal": "#F38BA8",
+        "para exámenes": "#74C7EC"
+    },
+    "mostrar_indicador_vacio": true,
+    "categorias": {
+        "estudiar": {
+            "fondo": "#1e3a5f",
+            "borde": "#1565C0"
+        },
+        "prepararme para ir al colegio": {
+            "fondo": "#5f1e1e",
+            "borde": "#C62828"
+        },
+        "atender a los estudios": {
+            "fondo": "#5f1e43",
+            "borde": "#C2185B"
+        },
+        "hacer terapia del ojo": {
+            "fondo": "#7a521e",
+            "borde": "#F57F17"
+        },
+        "relajarme": {
+            "fondo": "#3a3b4c",
+            "borde": "#6C7086"
+        }
+    },
+    "ajuste_interfaz": {
+        "mostrar_placeholder_vacio": true,
+        "texto_placeholder": "vacío..."
+    },
+    "otificaciones_activas": true,
+    "sonido_notificacion": true
+}

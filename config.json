@@ -1,0 +1,22 @@
+{
+    "apariencia": "Dark",
+    "sonido_notificaciones": true,
+    "categorias": {
+        "ejercicio": {
+            "fondo": "#1E3A2B",
+            "borde": "#2E7D32"
+        },
+        "estudiar": {
+            "fondo": "#1A2A3A",
+            "borde": "#1565C0"
+        },
+        "jugar": {
+            "fondo": "#3A1A2A",
+            "borde": "#AD1457"
+        },
+        "bombilla": {
+            "fondo": "#3A301A",
+            "borde": "#F57F17"
+        }
+    }
+}
