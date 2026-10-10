@@ -10,6 +10,10 @@ Aplicación de escritorio ligera y modular desarrollada en Python utilizando Cus
 - Capacidad de crear y tener diferentes horarios con rutinas distintas según el propósito al mismo tiempo.
 - Sistema modular de gestión de tareas y horarios.
 - Sistema de exportación en formato PDF y ICS.
+- Funcionamiento enteramente local y privado, nada de servidores y terceros involucrados en su funcionamiento más allá de lo que ves.
+ ## ¿Cómo se instala?
+ - Descarga desde la release el .exe con el código ya compilado y listo para ejecutarse.
+ - Llévalo a un directorio cualquiera y ahí genera los archivos (JSON) para guardar los datos.
 
 <img width="1919" height="1035" alt="Horcron" src="https://github.com/user-attachments/assets/5bb9471d-b6a3-4fac-8e02-fc63938d4c15" />
 
